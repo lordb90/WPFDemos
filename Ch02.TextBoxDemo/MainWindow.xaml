@@ -1,0 +1,52 @@
+﻿<Window
+    x:Class="Ch02.TextBoxDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Ch02.TextBoxDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="400"
+    Height="400"
+    mc:Ignorable="d">
+    <StackPanel Margin="10,10,10,20">
+        <!--  Simple TextBox  -->
+        <TextBox
+            Height="30"
+            Margin="10,5"
+            Text="Hello" />
+        <!--  TextBox with a range of sytles  -->
+        <TextBox
+            Height="30"
+            Margin="10,5"
+            FontSize="18"
+            FontWeight="Bold"
+            Foreground="Blue"
+            Text="Hello WPF!" />
+        <!--  Read Only TextBox  -->
+        <TextBox
+            Height="30"
+            Margin="10,5"
+            IsReadOnly="True"
+            Text="This is a 'ReadOnly' TextBox control" />
+        <!--  Disabled Text Box  -->
+        <TextBox
+            Height="30"
+            Margin="10,5"
+            IsEnabled="False"
+            Text="This is a 'Disabled' TextBox control" />
+        <!--  Multi Line TextBox  -->
+        <TextBox
+            Height="60"
+            Margin="10,5"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            VerticalScrollBarVisibility="Auto">
+            This is multiline textbox.
+            User can press 'Enter' key to move to next line.
+            User can press 'Enter' key to move to next line.
+            User can press 'Enter' key to move to next line.
+            User can press 'Enter' key to move to next line.
+        </TextBox>
+    </StackPanel>
+</Window>

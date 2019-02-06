@@ -1,0 +1,44 @@
+﻿<Window
+    x:Class="Ch02.ImageDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Ch02.ImageDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="975"
+    Height="400"
+    mc:Ignorable="d">
+    <StackPanel Orientation="Horizontal">
+        <Image>
+            <Image.Source>
+                <BitmapImage UriSource="demoImage.jpg" Rotation="Rotate180"/>
+            </Image.Source>
+        </Image>
+        <Image
+            Width="100"
+            Height="100"
+            Margin="10,10,5,10"
+            Source="demoImage.jpg"
+            Stretch="None" />
+        <Image
+            Width="100"
+            Height="100"
+            Margin="10,10,5,10"
+            Source="demoImage.jpg"
+            Stretch="Fill" />
+        <!--  Uniform setting is the default setting  -->
+        <Image
+            Width="100"
+            Height="100"
+            Margin="10,10,5,10"
+            Source="demoImage.jpg"
+            Stretch="Uniform" />
+        <Image
+            Width="100"
+            Height="100"
+            Margin="10,10,5,10"
+            Source="demoImage.jpg"
+            Stretch="UniformToFill" />
+    </StackPanel>
+</Window>

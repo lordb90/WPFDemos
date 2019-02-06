@@ -1,0 +1,8 @@
+﻿<NavigationWindow
+    x:Class="Ch1.PageDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow2"
+    Width="525"
+    Height="350"
+    Source="Page1.xaml" />
